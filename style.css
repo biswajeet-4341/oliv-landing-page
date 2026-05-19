@@ -737,6 +737,7 @@ button:hover,
     align-items: center;
     justify-content: space-evenly;
     opacity: 0;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .mem > .img > .social > i {
@@ -751,6 +752,7 @@ button:hover,
     background-color: black;
 }
 
-.mem > .img:hover {
-    animation: name duration timing-function delay iteration-count direction fill-mode;
+.mem > .img:hover .social {
+    opacity: 1;
+    transform: translateY(-70%);
 }
